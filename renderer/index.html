@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="index.js" defer></script>
+    <title>Image Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="../assests/icons/Icon_32x32.png" alt="Icon_32x32" />
+        <p class="text">Enter text to generate Image</p>
+      </div>
+      <form class="form" id="img-form">
+        <input type="text" placeholder="Enter text here" required id="text" />
+        <button class="btn" id="btn">Generate Image</button>
+      </form>
+      <div id="error" class="hidden">
+        <p class="error">Some error occured :(</p>
+      </div>
+
+      <div class="img-container hidden" id="imgContainer">
+        <img src="" alt="image" class="target-img" id="image" />
+        <a href="#" id="downloadButton" class="btn-down" download>
+          <i class="fa fa-download"></i> Download</a
+        >
+      </div>
+    </div>
+    <div class="loader-container hidden" id="loader">
+      <div class="loader"></div>
+      <p class="loader-text">Generating Image...</p>
+    </div>
+  </body>
+</html>

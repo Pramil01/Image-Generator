@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #097cbe;
+}
+.container{
+    overflow: hidden;
+    background-color: #097cbe;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+img{
+    margin: 0 auto;
+}
+.text{
+    font-family: 'News Cycle', sans-serif;
+    color: #daeaf7;
+    font-size: larger;
+    margin: 5px auto;
+    font-weight: 600;
+}
+.colored{
+    color:#00ebf3;
+}
