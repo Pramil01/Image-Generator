@@ -7,7 +7,7 @@ const isMac = process.platform === "darwin";
 
 let mainWindow;
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
